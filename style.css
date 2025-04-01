@@ -99,7 +99,19 @@ body {
 .about-box {
   display: grid;
   gap: 32px;
+  grid-template-rows: auto;
+}
+.about-box__1 {
+  display: grid;
+  gap: 32px;
   grid-template-columns: repeat(12, 1fr);
+  align-items: start;
+}
+.about-box__2 {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: end;
 }
 .about-box__link {
   text-decoration: none;
@@ -309,6 +321,7 @@ body {
     line-height: 100%;
   }
   .game__play {
+    width: 100%;
     font-size: 16px;
   }
   .game__img {
