@@ -109,7 +109,21 @@ body{
 .about-box{
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+
+    &__1{
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: start;
+    }
+
+    &__2{
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: end;
+    }
     
     &__link{
         text-decoration: none;
